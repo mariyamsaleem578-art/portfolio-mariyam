@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mariyam Saleem - Portfolio</title>
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+            background: #190019; /* Darkest Purple */
+            color: #FBE4D8; /* Cream */
+            font-family: 'Segoe UI', sans-serif;
+            margin:0;
+        }
+
+        section { padding: 80px 0; min-height: auto; }
+       .container { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
+
+        /* NAVBAR */
+       .navbar {
+            position: fixed; top:0; width:100%;
+            background: #190019;
+            z-index:1000; padding:15px; text-align:center;
+            border-bottom:1px solid #2B124C;
+        }
+       .navbar a {
+            color: #DFB6B2; /* Light Pink */
+            margin:0 15px; text-decoration:none; font-weight:600; font-size:14px;
+            letter-spacing: 1px;
+        }
+       .navbar a:hover { color: #854F6C; } /* Purple hover */
+
+        /* CARDS */
+       .card {
+            background: #2B124C; /* Dark Purple */
+            padding: 20px; border-radius: 12px;
+            border: 1px solid #522B5B; /* Medium Purple */
+        }
+
+       .tag {
+            background: #522B5B;
+            color: #FBE4D8;
+            padding: 5px 10px; border-radius: 6px;
+            font-size: 12px; margin: 4px; display: inline-block;
+        }
+
+        /* HOME - HASSAN STYLE WITH PURPLE */
+        #home { min-height: 100vh; display: flex; align-items: center; }
+        #home h1 { font-size: 90px; color: #FBE4D8; margin: 0; letter-spacing: 3px; font-weight: 800; }
+        #home h2 { font-size: 24px; color: #854F6C; margin: 15px 0; font-weight: 400; } /* Accent Purple */
+        #home p { font-size: 16px; color: #DFB6B2; max-width: 700px; line-height: 1.8; }
+
+       .btn-group { margin-top: 30px; }
+       .btn { display:inline-block; padding:14px 30px; background:transparent; color:#854F6C; text-decoration:none; border-radius:6px; font-weight:bold; margin-right:15px; border:2px solid #854F6C; transition: 0.3s; }
+       .btn:hover { background: #854F6C; color: #FBE4D8; }
+       .btn-solid { background: #854F6C; color: #FBE4D8; }
+       .btn-solid:hover { background: transparent; color: #854F6C; }
+
+        /* TYPEWRITER CURSOR */
+       .cursor { display: inline-block; width: 3px; background: #854F6C; animation: blink 1s infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        h1.section { font-size: 50px; color: #FBE4D8; margin-bottom: 15px; }
+        h1.section span { color: #854F6C; }
+        h3 { color: #854F6C; margin: 10px 0; font-size: 16px; }
+        p { color: #DFB6B2; line-height: 1.6; margin: 8px 0; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#terminal">TERMINAL</a>
+        <a href="#github">GITHUB</a>
+        <a href="#journey">JOURNEY</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+
+    <!-- 1. HOME - TYPEWRITER EFFECT -->
+    <section id="home">
+        <div class="container">
+            <p style="color:#854F6C; letter-spacing:2px; font-size:14px;">HI, I'M</p>
+            <h1>MARIYAM <br>SALEEM</h1>
+            <h2 id="typewriter"></h2>
+            <p>I build and deploy backend systems that scale — Python, Flask, REST APIs, and ML models that solve real business problems. Currently focused on Data Science and AI Engineering.</p>
+            <div class="btn-group">
+                <a href="#projects" class="btn btn-solid">VIEW PROJECTS</a>
+                <a href="#" class="btn">DOWNLOAD CV</a>
+                <a href="#contact" class="btn">CONTACT</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT -->
+    <section id="about">
+        <div class="container">
+            <p style="color:#854F6C; font-size:14px;">01 - ABOUT</p>
+            <h1 class="section">WHO'S <span>BUILDING THIS?</span></h1>
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px; margin-top:30px;">
+                <div class="card"><p style="color:#854F6C; font-weight:bold;">01</p><h3>INTRODUCTION</h3><p>I'm MARIYAM SALEEM from Faisalabad. A Python Developer focused on Data Science, Backend, and ML. I turn data into decisions.</p></div>
+                <div class="card"><p style="color:#854F6C; font-weight:bold;">02</p><h3>CAREER GOAL</h3><p>Transition from Data Science to AI/ML Engineering - deploying models to production.</p></div>
+                <div class="card"><p style="color:#854F6C; font-weight:bold;">03</p><h3>ROADMAP</h3><p>Deep Learning, MLOps, Docker, AWS, and deploying LLMs.</p></div>
+                <div class="card"><p style="color:#854F6C; font-weight:bold;">04</p><h3>STRENGTHS</h3><p>Problem Solving, Clean Python Code, Data Analysis, Automation.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SKILLS -->
+    <section id="skills">
+        <div class="container">
+            <p style="color:#854F6C; font-size:14px;">02 - SKILLS</p>
+            <h1 class="section">BEHIND THE <span>SYSTEMS</span></h1>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top:30px;">
+                <div class="card"><h3>PROGRAMMING</h3><p>— Python<br>— SQL<br>— Bash</p></div>
+                <div class="card"><h3>DATA SCIENCE</h3><p>— Pandas<br>— NumPy<br>— Matplotlib</p></div>
+                <div class="card"><h3>MACHINE LEARNING</h3><p>— Scikit-learn<br>— Regression<br>— Classification</p></div>
+                <div class="card"><h3>WEB DEV</h3><p>— Flask<br>— HTML/CSS<br>— REST APIs</p></div>
+                <div class="card"><h3>DATABASES</h3><p>— SQLite<br>— MySQL<br>— PostgreSQL</p></div>
+                <div class="card"><h3>AI & TOOLS</h3><p>— Jupyter<br>— Git & GitHub<br>— Docker</p></div>
+                <div class="card"><h3>DEPLOYMENT</h3><p>— Streamlit<br>— AWS<br>— Linux</p></div>
+                <div class="card"><h3>ANALYTICS</h3><p>— EDA<br>— Data Cleaning<br>— Visualization</p></div>
+                <div class="card"><h3>AUTOMATION</h3><p>— File Handling<br>— Web Scraping<br>— APIs</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PROJECTS -->
+    <section id="projects">
+        <div class="container">
+            <p style="color:#854F6C; font-size:14px;">03 - PROJECTS</p>
+            <h1 class="section">SELECTED <span>WORK</span></h1>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top:30px;">
+
+                <div class="card">
+                    <h3>RESUME ANALYZER</h3>
+                    <p>AI tool that parses PDF and DOCX resumes, extracts key info and skills, and provides a 100-point resume quality score with improvement suggestions.</p>
+                    <span class="tag">PYTHON</span><span class="tag">NLP</span><span class="tag">PDFPLUMBER</span><span class="tag">STREAMLIT</span>
+                </div>
+
+                <div class="card">
+                    <h3>NIMBUS - WEATHER DASHBOARD</h3>
+                    <p>Real-time weather app using OpenWeather API. Shows hourly forecast, weather maps, and alerts with a clean responsive interface.</p>
+                    <span class="tag">FLASK</span><span class="tag">API</span><span class="tag">JAVASCRIPT</span><span class="tag">CSS</span>
+                </div>
+
+                <div class="card">
+                    <h3>STUDENT MARKS PREDICTOR</h3>
+                    <p>ML system that predicts student scores based on study hours. 92% accuracy with Linear Regression and deployed using Flask.</p>
+                    <span class="tag">PYTHON</span><span class="tag">SCIKIT-LEARN</span><span class="tag">FLASK</span><span class="tag">PANDAS</span>
+                </div>
+
+                <div class="card">
+                    <h3>PERSONAL EXPENSE TRACKER</h3>
+                    <p>Flask based dashboard for tracking income and expenses. Features: category analysis, monthly reports, and data visualization with charts.</p>
+                    <span class="tag">FLASK</span><span class="tag">SQLITE</span><span class="tag">PANDAS</span><span class="tag">CHART.JS</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TERMINAL -->
+    <section id="terminal">
+        <div class="container">
+            <p style="color:#854F6C; font-size:14px;">04 - TERMINAL</p>
+            <h1 class="section">COMMAND <span>LINE</span></h1>
+            <div style="background:#000; padding:20px; border-radius:10px; font-family:monospace; margin-top:30px; border:1px solid #854F6C;">
+                <p style="color:#00ff00; margin:5px 0;">mariyam@portfolio:~$ whoami</p><p style="margin:5px 0 15px;">MARIYAM SALEEM - Python Developer & Data Scientist</p>
+                <p style="color:#00ff00; margin:5px 0;">mariyam@portfolio:~$ ls projects/</p><p style="margin:5px 0;">resume_analyzer/ nimbus_weather/ student_predictor/ expense_tracker/</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. GITHUB -->
+    <section id="github">
+        <div class="container">
+            <p style="color:#854F6C; font-size:14px;">05 - GITHUB</p>
+            <h1 class="section"><span>LIVE FROM GITHUB</span></h1>
+            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 20px; margin-top:30px;">
+                <div class="card" style="text-align:center;">
+                    <div style="width:100px; height:100px; background:#854F6C; color:#190019; border-radius:15px; margin:0 auto 10px; display:flex; align-items:center; justify-content:center; font-size:40px; font-weight:bold;">MS</div>
+                    <h3 style="color:#FBE4D8;">MARIYAM-SALEEM</h3><p>@mariyam-saleem</p>
+                </div>
+                <div>
+                    <h3 style="color:#854F6C;">RECENT REPOSITORIES</h3>
+                    <div class="card" style="margin-bottom:15px;"><h4 style="color:#FBE4D8;">RESUME-ANALYZER</h4><p>AI resume parser with scoring system</p><span class="tag">PYTHON</span></div>
+                    <div class="card" style="margin-bottom:15px;"><h4 style="color:#FBE4D8;">NIMBUS-WEATHER</h4><p>Real-time weather dashboard with API</p><span class="tag">FLASK</span></div>
+                    <div class="card"><h4 style="color:#FBE4D8;">DATA-ANALYSIS-DASHBOARD</h4><p>Sales data visualization project</p><span class="tag">PANDAS</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. JOURNEY -->
+    <section id="journey">
+        <div class="container">
+            <p style="color:#854F6C; font-size:14px;">06 - JOURNEY</p>
+            <h1 class="section">PYTHON <span>→ AI ENGINEERING</span></h1>
+            <div style="margin-top:40px; border-top:2px solid #2B124C; padding-top:30px; display:grid; grid-template-columns:repeat(3,1fr); gap:15px;">
+                <div class="card"><p style="color:#854F6C; font-size:20px;">01</p><h4>PYTHON FUNDAMENTALS</h4><p>Core, OOP, File Handling</p></div>
+                <div class="card"><p style="color:#854F6C; font-size:20px;">02</p><h4>DATA ANALYSIS</h4><p>Pandas, NumPy, EDA, Visualization</p></div>
+                <div class="card"><p style="color:#854F6C; font-size:20px;">03</p><h4>MACHINE LEARNING</h4><p>Scikit-learn, Regression, Classification</p></div>
+                <div class="card"><p style="color:#854F6C; font-size:20px;">04</p><h4>WEB DEVELOPMENT</h4><p>Flask, APIs, HTML/CSS, Deployment</p></div>
+                <div class="card"><p style="color:#854F6C; font-size:20px;">05</p><h4>DATABASES & CLOUD</h4><p>SQL, SQLite, AWS, Docker</p></div>
+                <div class="card"><p style="color:#854F6C; font-size:20px;">06</p><h4>AI ENGINEERING</h4><p>Deep Learning, MLOps <span style="background:#854F6C; color:#190019; padding:2px 6px; border-radius:3px; font-size:10px;">CURRENT</span></p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <p style="color:#854F6C; font-size:14px;">07 - CONTACT</p>
+            <h1 class="section">LET'S BUILD <span>SOMETHING GREAT.</span></h1>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top:30px;">
+                <div>
+                    <p>Open to Data Science, Python Development, and ML projects.</p>
+                    <p>📧 mariyam.saleem@gmail.com</p>
+                    <p>💻 github.com/mariyam-saleem</p>
+                    <p>📍 Faisalabad, Pakistan</p>
+                </div>
+                <div class="card">
+                    <input type="text" placeholder="Your Name" style="width:100%; padding:10px; margin:8px 0; background:#190019; border:1px solid #522B5B; border-radius:5px; color:#FBE4D8;">
+                    <input type="email" placeholder="Your Email" style="width:100%; padding:10px; margin:8px 0; background:#190019; border:1px solid #522B5B; border-radius:5px; color:#FBE4D8;">
+                    <textarea placeholder="Your Message" rows="3" style="width:100%; padding:10px; margin:8px 0; background:#190019; border:1px solid #522B5B; border-radius:5px; color:#FBE4D8;"></textarea>
+                    <button class="btn btn-solid" style="width:100%; border:none;">SEND MESSAGE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TYPEWRITER SCRIPT -->
+    <script>
+        const texts = ["Backend Engineer |", "Data Scientist |", "AI Engineer |", "Python Developer |"];
+        let count = 0;
+        let index = 0;
+        let currentText = "";
+        let letter = "";
+
+        (function type(){
+            if(count === texts.length){ count = 0; }
+            currentText = texts[count];
+            letter = currentText.slice(0, ++index);
+
+            document.getElementById('typewriter').innerHTML = letter + '<span class="cursor"></span>';
+
+            if(letter.length === currentText.length){
+                count++;
+                index = 0;
+                setTimeout(type, 2000); // 2 sec rukega
+            } else {
+                setTimeout(type, 100); // typing speed
+            }
+        }());
+    </script>
+
+</body>
+</html>

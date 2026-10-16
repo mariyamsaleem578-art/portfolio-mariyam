@@ -1,0 +1,42 @@
+html { scroll-behavior: smooth; }
+body { 
+    background: #190019;
+    color: #FBE4D8;
+    font-family: 'Segoe UI', sans-serif; 
+    margin:0; 
+}
+section { padding: 120px 0; min-height: 100vh; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+
+/* NAVBAR */
+.navbar { 
+    position: fixed; top:0; width:100%; 
+    background: #190019; 
+    z-index:1000; padding:20px; text-align:center; 
+    border-bottom:1px solid #2B124C; 
+}
+.navbar a { 
+    color: #DFB6B2;
+    margin:0 15px; text-decoration:none; font-weight:600; letter-spacing:1px;
+}
+.navbar a:hover { color: #854F6C; }
+
+/* CARDS */
+.card { 
+    background: #2B124C;
+    padding: 25px; border-radius: 12px; 
+    border: 1px solid #522B5B;
+}
+
+.tag { 
+    background: #522B5B; 
+    color: #FBE4D8;
+    padding: 6px 12px; border-radius: 6px; 
+    font-size: 12px; margin: 5px; display: inline-block; 
+}
+
+h1 { font-size: 60px; color: #FBE4D8; } 
+h1 span { color: #854F6C; }
+h3 { color: #FBE4D8; }
+p { color: #DFB6B2; }
+.btn { display:inline-block; padding:14px 35px; background:#854F6C; color:#FBE4D8; text-decoration:none; border-radius:8px; font-weight:bold; margin-top:20px; }
